@@ -1,10 +1,10 @@
 {
-  "name": "cordova-plugin-camera",
-  "version": "6.0.1-dev",
+  "name": "@cloudscapelabs/cordova-plugin-camera",
+  "version": "6.0.1-csl1",
   "description": "Cordova Camera Plugin",
   "types": "./types/index.d.ts",
   "cordova": {
-    "id": "cordova-plugin-camera",
+    "id": "@cloudscapelabs/cordova-plugin-camera",
     "platforms": [
       "android",
       "ios",
@@ -13,8 +13,13 @@
       "osx"
     ]
   },
-  "repository": "github:apache/cordova-plugin-camera",
-  "bugs": "https://github.com/apache/cordova-plugin-camera/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudscapelabs/cordova-plugin-camera"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [
     "cordova",
     "camera",
@@ -31,35 +36,6 @@
   },
   "author": "Apache Software Foundation",
   "license": "Apache-2.0",
-  "engines": {
-    "cordovaDependencies": {
-      "3.0.0": {
-        "cordova-android": ">=6.3.0"
-      },
-      "4.1.0": {
-        "cordova-android": ">=6.3.0",
-        "cordova": ">=7.1.0"
-      },
-      "5.0.0": {
-        "cordova-android": ">=9.0.0",
-        "cordova-ios": ">=5.1.0",
-        "cordova": ">=9.0.0"
-      },
-      "5.0.4-dev": {
-        "cordova-android": "<10.0.0",
-        "cordova-ios": ">=5.1.0",
-        "cordova": ">=9.0.0"
-      },
-      "6.0.0": {
-        "cordova-android": ">=10.0.0",
-        "cordova-ios": ">=5.1.0",
-        "cordova": ">=9.0.0"
-      },
-      "7.0.0": {
-        "cordova": ">100"
-      }
-    }
-  },
   "devDependencies": {
     "@cordova/eslint-config": "^3.0.0"
   }
